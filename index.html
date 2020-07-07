@@ -1,7 +1,12 @@
 <html>
   <body>
     <script>
-      console.log('url',document.location);
-      //document.location.href = 'https://smi.fm';</script>
+      if(!!document.location.hash.replace('#','')){
+        try{
+          docment.location.href = atob(document.location.hash.replace('#',''));
+        }catch(e){
+          console.log(e)
+          }
+      }
   </body>
 </html>
