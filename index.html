@@ -1,6 +1,7 @@
 <html>
   <body>
     <script>
+      console.log('aa',window.document.location.hash)
         if(!!window.document.location.hash.replace('#','')){
           try{
             window.document.location.href = atob(window.document.location.hash.replace('#',''));
