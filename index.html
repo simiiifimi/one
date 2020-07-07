@@ -3,7 +3,7 @@
     <script>
       if(!!document.location.hash.replace('#','')){
         try{
-          docment.location.href = atob(document.location.hash.replace('#',''));
+          document.location.href = atob(document.location.hash.replace('#',''));
         }catch(e){
           console.log(e)
           }
