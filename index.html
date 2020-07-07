@@ -1,14 +1,12 @@
 <html>
   <body>
     <script>
-      setTimeout(function(){
-        if(!!document.location.hash.replace('#','')){
+        if(!!window.document.location.hash.replace('#','')){
           try{
-            document.location.href = atob(document.location.hash.replace('#',''));
+            window.document.location.href = atob(window.document.location.hash.replace('#',''));
           }catch(e){
             console.log(e)
             }
         }
-      },150);
   </body>
 </html>
